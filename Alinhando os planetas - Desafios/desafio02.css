@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+
+.page {
+    margin: 20px;
+    display: flex;
+    height: 500px;
+    gap: 1rem;
+}
+
+main {
+    border: 1px solid black;
+    flex: 1;
+}
+
+aside {
+    border: 1px solid black;
+    flex-basis: 25%;
+}
+
