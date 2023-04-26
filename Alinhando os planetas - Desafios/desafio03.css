@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+.gallery > img {
+    width: 30%;
+    height: auto;
+}
+.gallery {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
