@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(255, 234, 255);
+}
+
+#openModal {
+    display: none;
+    background-color: rgb(107, 21, 173);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+.modal-wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(222, 222, 222);
+    width: 100vw;
+    height: 100vh;
+}
