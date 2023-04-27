@@ -12,16 +12,17 @@ body {
 }
 
 #openModal {
-    display: none;
     background-color: rgb(107, 21, 173);
     color: white;
     padding: 20px 40px;
     border-radius: 5px;
     border: 0;
     font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.modal-wrapper {
+#modal-wrapper {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -29,4 +30,22 @@ body {
     background-color: rgb(222, 222, 222);
     width: 100vw;
     height: 100vh;
+}
+
+#openModal:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.escExit {
+    padding: 80px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
