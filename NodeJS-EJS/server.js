@@ -2,15 +2,47 @@ const express = require('express');
 
 const app = express();
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 app.get('/', function (req, res){
-    res.render('index');
-})
+    const items = [
+        {
+            title: 'D',
+            message:'esenvolver aplicações de forma fácil'
+        },
+        {
+            title: 'E',
+            message:'JS usa javascript para renderizar HTML'
+        },
+        {
+            title: 'M',
+            message:'uito fácil de usar'
+        },
+        {
+            title: 'A',
+            message:'mbiente ServeSide de fácil manipulação'
+        },
+        {
+            title: 'I',
+            message:'nstalar EJS'
+        },
+        {
+            title: 'S',
+            message:'íntaxe simples'
+        },
+    ];
+    
+    const subtitle = 'Uma linguagem de modelagem para criação de páginas HTML utilizando JavaScript'
+
+    res.render('pages/index', {
+        qualitys: items,
+        subtitle: subtitle,
+    });
+});
 
 app.get('/sobre', function (req, res){
-    res.render('about');
-})
+    res.render('pages/about');
+});
 
 app.listen(8080);
 
